@@ -1,0 +1,259 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+#root {
+  height: 100%;
+}
+
+#logoscroll {
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.App {
+  height: 100%;
+}
+
+.navbar {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  height: 80px;
+  align-items: center;
+}
+
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1976D2;
+  color: white;
+}
+
+.projButt {
+  border-color: #57068c;
+  color: #57068c;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+.projButt:focus {
+  outline: none;
+  background-color: white;
+}
+
+.startButt {
+  color: white;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+.startButt:hover {
+  color: #FFEB3B;
+}
+
+.projButt:hover {
+  background-color: #57068c;
+  color: #FFFFFF;
+}
+
+.Butt {
+  border-color: #57068c;
+  color: #FFFFFF;
+  background-color: #C2185B;
+  height: 40px;
+  width: 105px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+  font-weight: 300;
+  align-self: flex-start;
+}
+
+.teamMemberContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.secondTeamMember {
+  margin-top: 60px;
+}
+
+.teamAvatar {
+  height: 160px;
+  border-radius: 50%;
+  margin-right: 30px;
+  align-self: center;
+}
+
+.teamInfoContainer {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.Butt:hover {
+  background-color: #57068c;
+  border-color: #57068c;
+  color: #FFFFFF;
+}
+
+.Butt:focus {
+  outline: none;
+  background-color: #C2185B;
+  color: white;
+}
+
+.mobilepic {
+  display: none;
+}
+
+.footer {
+  background: linear-gradient(
+    to right,
+    #FFFFFF 0%,
+    #FFFFFF 50%,
+    #CFD8DC 50%,
+    #CFD8DC 100%
+  );
+}
+
+.proj {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 30px;
+}
+
+.projDetail {
+  margin-top: 50px;
+  padding-right: 15px;
+}
+
+.projButton {
+  margin-top: -50px;
+  width: 100%;
+}
+
+.about {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContain {
+  padding: 20px 50px 20px 50px;
+}
+
+.imageCompareContain {
+  padding: 30px 50px 30px 50px;
+}
+
+.projTitle {
+  font-size: 24px;
+}
+
+.projDesc {
+  font-size: 16px;
+}
+
+.whoami {
+  font-size: 16px;
+}
+
+.smalldisplay {
+  display: none;
+}
+
+.aboutPlotree {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.landingBanner {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 769px) {
+  .projButt {
+    display: none;
+  }
+  .navbar {
+    align-items: baseline;
+  }
+
+  .desktoppic {
+    display: none;
+  }
+
+  .mobilepic {
+    display: block;
+  }
+
+  .imageContain {
+    padding: 25px;
+  }
+
+  .imageCompareContain {
+    padding: 20px;
+  }
+
+  .about {
+    justify-content: space-around;
+  }
+
+  .teamAvatar {
+    height: 130px;
+  }
+
+  .whoami {
+    font-size: 14px;
+  }
+
+  .myname {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .whoami {
+    display: none;
+  }
+  .smalldisplay {
+    display: block;
+  }
+  .aboutPlotree {
+    font-size: 14px;
+  }
+  .landingBanner {
+    font-size: 40px;
+  }
+  #logoscroll {
+    height: 100px;
+  }
+}
