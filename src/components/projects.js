@@ -49,9 +49,9 @@ class Projects extends Component {
         <Row className="show-grid" style={{height: '100%'}}>
           <Col lg={6} md={6} sm={6} xs={12} className="proj" style={{paddingRight: '0px', paddingLeft: '0px', position: 'relative'}}>
             <div style={{height: '100%'}}>
-              <div style={{backgroundColor: 'rgba(76, 175, 80, 0.55)', position: 'absolute', top: '0', left: '0', zIndex: '4', height: '100%', width: '100%'}}/>
-              <img src={map} style ={{height: '100%', width: '100%', objectFit: 'contain'}} alt="Pakistan General Elections Map" />
-              <div className="containProjectTitle" style={{color: 'white', paddingLeft: '75px', zIndex: '5'}}>
+              <div style={{backgroundColor: 'rgba(76, 175, 80, 0.475)', position: 'absolute', top: '0', left: '0', zIndex: '4', height: '100%', width: '100%'}}/>
+              <img src={map} style ={{height: '88%', width: '86%', marginLeft: '7%', objectFit: 'contain'}} alt="Pakistan General Elections Map" />
+              <div className="containProjectTitle" style={{color: 'black', paddingLeft: '75px', zIndex: '5'}}>
                 <Fade down delay={50}>
                   <div style={{display: 'flex', alignItems: 'center'}}>
                     <p className="projTitle" style={{marginBottom: '0px'}}>PAKISTAN GENERAL ELECTIONS 2018</p><img style={{width: '35px', marginLeft: '10px'}} alt="ballot box" src={ballot}/>
@@ -61,7 +61,7 @@ class Projects extends Component {
                   <p className="projDesc">A series of visualizations presenting the results from the 2018 General Election in Pakistan. The users can answer specific questions about the results data through interactive filters. Data Source: Election Commission of Pakistan</p>
                 </Fade>
                 <Fade delay={650}>
-                  <span onClick={() => this.elections()} className="Butt" style={{color: 'white'}}>View Project</span>
+                  <span onClick={() => this.elections()} className="Butt">View Project</span>
                 </Fade>
               </div>
             </div>
