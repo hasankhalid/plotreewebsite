@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import logo from '../resources/logo.svg'
-import {Button} from 'react-bootstrap'
 
 class NavBar extends Component {
   projectButtonClick = () => {

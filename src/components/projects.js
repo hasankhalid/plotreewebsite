@@ -10,7 +10,6 @@ import ballot from '../resources/ballot1.svg';
 import fiscal from '../resources/laptops.svg';
 import map from '../resources/map.png';
 import calender from '../resources/cal.png';
-import {Button} from 'react-bootstrap'
 import Fade from 'react-reveal/Fade';
 import FaTree from 'react-icons/lib/fa/tree';
 import FaLineChart from 'react-icons/lib/fa/line-chart';
@@ -51,11 +50,11 @@ class Projects extends Component {
           <Col lg={6} md={6} sm={6} xs={12} className="proj" style={{paddingRight: '0px', paddingLeft: '0px', position: 'relative'}}>
             <div style={{height: '100%'}}>
               <div style={{backgroundColor: 'rgba(76, 175, 80, 0.55)', position: 'absolute', top: '0', left: '0', zIndex: '4', height: '100%', width: '100%'}}/>
-              <img src={map} style ={{height: '100%', width: '100%', objectFit: 'contain'}} alt="logo" />
+              <img src={map} style ={{height: '100%', width: '100%', objectFit: 'contain'}} alt="Pakistan General Elections Map" />
               <div className="containProjectTitle" style={{color: 'white', paddingLeft: '75px', zIndex: '5'}}>
                 <Fade down delay={50}>
                   <div style={{display: 'flex', alignItems: 'center'}}>
-                    <p className="projTitle" style={{marginBottom: '0px'}}>PAKISTAN GENERAL ELECTIONS 2018</p><img style={{width: '35px', marginLeft: '10px'}} src={ballot}/>
+                    <p className="projTitle" style={{marginBottom: '0px'}}>PAKISTAN GENERAL ELECTIONS 2018</p><img style={{width: '35px', marginLeft: '10px'}} alt="ballot box" src={ballot}/>
                   </div>
                 </Fade>
                 <Fade up delay={350}>
@@ -70,7 +69,7 @@ class Projects extends Component {
           <Col lg={6} md={6} sm={6} xs={12} className="proj" style={{paddingRight: '0px', paddingLeft: '0px', position: 'relative'}}>
             <div style={{height: '100%'}}>
               <div style={{backgroundColor: 'rgba(245, 245, 245, 0.1)', position: 'absolute', top: '0', left: '0', zIndex: '4', height: '100%', width: '100%'}}/>
-              <img src={calender} style ={{height: '100%', width: '100%', objectFit: 'contain'}} alt="logo" />
+              <img src={calender} style ={{height: '100%', width: '100%', objectFit: 'contain'}} alt="Calender details for attendance of a PHA gardener" />
               <div className="containProjectTitle" style={{color: 'black', paddingLeft: '60px', backgroundColor: 'rgba(255, 255, 255, 0.9)', zIndex: '5'}}>
                 <Fade down delay={450}>
                   <div style={{display: 'flex', alignItems: 'center', marginBottom: '5px'}}>
@@ -107,7 +106,7 @@ class Projects extends Component {
           </Col>
           <Col lg={6} md={6} sm={6} xs={12} className="proj" style={{paddingRight: '0px', paddingLeft: '0px', position: 'relative', backgroundColor: 'rgba(238, 238, 238, 1)'}}>
             <div style={{height: '100%'}}>
-              <img src={image4} style ={{height: '100%', width: '90%', objectFit: 'contain', marginLeft: '5%'}} className="App-logo" alt="logo" />
+              <img src={image4} style ={{height: '100%', width: '90%', objectFit: 'contain', marginLeft: '5%'}} className="App-logo" alt="Chord diagram about reproductive health caregivers and institutions" />
               <div className="containProjectTitle" style={{color: 'black', paddingLeft: '60px', zIndex: '5'}}>
                 <Fade down delay={450}>
                   <div style={{display: 'flex', alignItems: 'center', marginBottom: '5px'}}>
@@ -125,8 +124,8 @@ class Projects extends Component {
           </Col>
           <Col lg={6} md={6} sm={6} xs={12} className="proj" style={{paddingRight: '0px', paddingLeft: '0px', position: 'relative', backgroundColor: '#37474F'}}>
             <div style={{height: '100%'}}>
-              <img src={image2} className="desktoppic" style ={{height: '100%', width: '100%', objectFit: 'contain'}} alt="Reproductive Health" />
-              <img src={image21} className="mobilepic" style ={{height: '100%', width: '100%', objectFit: 'contain'}} alt="Reproductive Health" />
+              <img src={image2} className="desktoppic" style ={{height: '100%', width: '100%', objectFit: 'contain'}} alt="Map showing Terror incidents in Pakistan" />
+              <img src={image21} className="mobilepic" style ={{height: '100%', width: '100%', objectFit: 'contain'}} alt="Map showing Terror incidents in Pakistan" />
               <div className="containProjectTitle" style={{color: 'white', paddingLeft: '75px', zIndex: '5'}}>
                 <Fade down delay={50}>
                   <div style={{display: 'flex', alignItems: 'center', marginBottom: '5px'}}>
@@ -144,7 +143,7 @@ class Projects extends Component {
           </Col>
           <Col lg={6} md={6} sm={6} xs={12} className="proj" style={{paddingRight: '0px', paddingLeft: '0px', position: 'relative', backgroundColor: 'white'}}>
             <div style={{height: '100%'}}>
-              <img src={fiscal} style ={{height: '76%', width: '76%', objectFit: 'contain', marginLeft: '12%', marginTop: '5%'}} alt="Reproductive Health" />
+              <img src={fiscal} style ={{height: '76%', width: '76%', objectFit: 'contain', marginLeft: '12%', marginTop: '5%'}} alt="Punjab Budget Forecast Tool" />
               <div className="containProjectTitle" style={{color: 'black', paddingLeft: '75px', backgroundColor: 'rgba(245, 245, 245, 0.2)', zIndex: '5'}}>
                 <Fade down delay={450}>
                   <div style={{display: 'flex', alignItems: 'center', marginBottom: '5px'}}>
@@ -162,7 +161,7 @@ class Projects extends Component {
           </Col>
           <Col lg={6} md={6} sm={6} xs={12} className="proj" style={{paddingRight: '0px', paddingLeft: '0px', position: 'relative'}}>
             <div style={{height: '100%'}}>
-              <img src={image} style ={{height: '100%', width: '100%', objectFit: 'cover'}} className="App-logo" alt="logo" />
+              <img src={image} style ={{height: '100%', width: '100%', objectFit: 'cover'}} className="App-logo" alt="Map showing water connections across colonies in Faisalabad" />
               <div className="containProjectTitle" style={{color: 'white', paddingLeft: '75px', backgroundColor: 'rgba(87, 6, 140, 0.6)'}}>
                 <Fade down delay={50}>
                   <p className="projTitle">WASA Consumer Survey Map</p>

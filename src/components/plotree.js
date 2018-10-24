@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import logo from '../resources/logoAlone.svg'
 import { Grid, Row, Col } from 'react-bootstrap'
 import saad from '../resources/saad.jpeg'
 import hasan from '../resources/hasan1.jpg'

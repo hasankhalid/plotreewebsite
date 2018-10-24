@@ -4,7 +4,6 @@ import TiSocialTwitterCircular from 'react-icons/lib/ti/social-twitter-circular'
 import TiSocialLinkedinCircular from 'react-icons/lib/ti/social-linkedin-circular';
 import TiSocialFacebookCircular from 'react-icons/lib/ti/social-facebook-circular';
 import TiSocialGithubCircular from 'react-icons/lib/ti/social-github-circular';
-import logo from '../resources/logoinv.svg';
 
 class Footer extends Component {
   twitter = () => {

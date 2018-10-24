@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import FauxDonut from './donut.js';
-import IoAndroidArrowDropdownCircle from 'react-icons/lib/io/android-arrow-dropdown-circle';
 import NavBar from './navbar';
 import wasa from '../resources/saad1.jpg';
 import TiSocialFacebook from 'react-icons/lib/ti/social-facebook';
