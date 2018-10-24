@@ -9,7 +9,7 @@ class Donut extends Component {
   componentDidMount() {
    var faux = this.props.connectFauxDOM('div', 'donut');
 
-   var scale_factor = 0.325,
+   var scale_factor = 0.30,
        width = 490 * scale_factor,
        height = 490 * scale_factor,
        outerRadius = Math.min(width, height) * .5,
@@ -124,7 +124,7 @@ class Donut extends Component {
 
   render () {
     return (
-      <div>
+      <div className="fauxDonut">
         {this.props.donut}
       </div>
     )
