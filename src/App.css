@@ -2,7 +2,6 @@ html,
 body {
   height: 100%;
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
 }
 
 #root {
@@ -18,35 +17,129 @@ body {
   height: 100%;
 }
 
-.navbar {
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
+.navTrans {
+  background-color: rgba(255,255,255,0);
+  border: none;
   height: 80px;
   align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.navColor {
+  background-color: white;
+  color: #57068c;
+  border: none;
+  height: 70px;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0px 6px 55px -8px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 6px 55px -8px rgba(0,0,0,0.15);
+  box-shadow: 0px 6px 55px -8px rgba(0,0,0,0.15);
+}
+
+.navRightEight {
+  height: 80px;
+}
+
+.navRightSeven {
+  height: 70px;
 }
 
 .landing {
   height: 100vh;
   display: flex;
+  position: relative;
   flex-direction: column;
-  background-color: #1976D2;
-  color: white;
+  color: #57068c;
+}
+
+.landingAbsolute {
+  position: absolute;
+  top: 0;
+}
+
+.landingWhite {
+  width: 50%;
+  height: 100%;
+}
+
+.landingMap {
+  width: 50%;
+  right: 0;
+  height: 100%;
+}
+
+.wasaMap {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 4;
+}
+
+.landingGradient {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #7F00FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1565C0, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1565C0, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 0.2;
+  z-index: 5;
+}
+
+.socialContain {
+  position: absolute;
+  bottom: 0;
+  font-size: 28px;
+  padding-bottom: 20px;
+  z-index: 6;
+}
+
+.fauxDonut {
+  display: flex;
+  justify-content: center;
+  margin-top: 35%;
+  height: 100%;
+}
+
+.landingColContain {
+  display: flex;
+  height: 100%;
+}
+
+.landingColumn {
+  height: 100%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .projButt {
-  border-color: #57068c;
-  color: #57068c;
+  border: none;
+  color: white;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
+  margin-bottom: 0px;
   /* ...and now for the proper property */
   transition:.5s;
 }
 
-.projButt:focus {
-  outline: none;
-  background-color: white;
+.projButtColor {
+  color: #57068c;
+  margin-bottom: 0px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }
 
 .startButt {
@@ -63,28 +156,26 @@ body {
   color: #FFEB3B;
 }
 
-.projButt:hover {
-  background-color: #57068c;
-  color: #FFFFFF;
-}
-
 .Butt {
-  border-color: #57068c;
-  color: #FFFFFF;
-  background-color: #C2185B;
-  height: 40px;
-  width: 105px;
-  display: flex;
-  align-items: center;
-  font-size: 14px;
+  border: none;
+  background-color: rgba(255, 0, 0, 0);
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0px;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 1px solid;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
   /* ...and now for the proper property */
   transition:.5s;
-  font-weight: 300;
   align-self: flex-start;
+}
+
+.teamHeading {
+  margin-bottom: 60px;
 }
 
 .teamMemberContainer {
@@ -94,7 +185,7 @@ body {
 }
 
 .secondTeamMember {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .teamAvatar {
@@ -112,34 +203,21 @@ body {
   justify-content: center;
 }
 
-.Butt:hover {
-  background-color: #57068c;
-  border-color: #57068c;
-  color: #FFFFFF;
-}
-
-.Butt:focus {
-  outline: none;
-  background-color: #C2185B;
-  color: white;
-}
-
 .mobilepic {
   display: none;
 }
 
 .footer {
-  background: linear-gradient(
-    to right,
-    #FFFFFF 0%,
-    #FFFFFF 50%,
-    #CFD8DC 50%,
-    #CFD8DC 100%
-  );
+  background: #57068c;
+  color: white;
+}
+
+.nunito {
+  font-family: 'Nunito', sans-serif;
 }
 
 .proj {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,7 +236,7 @@ body {
 }
 
 .about {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,12 +251,20 @@ body {
   padding: 30px 50px 30px 50px;
 }
 
+.containProjectTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 60px;
+}
+
 .projTitle {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .projDesc {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .whoami {
@@ -194,17 +280,88 @@ body {
   margin-top: 15px;
 }
 
-.landingBanner {
-  font-size: 50px;
+.landingBanner, .landingTitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
   font-weight: 300;
 }
 
-@media only screen and (max-width: 769px) {
-  .projButt {
-    display: none;
+.landingTitle {
+  margin-top: 45%;
+  font-size: 45px;
+}
+
+.teamHeading {
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 769px) {
+  .landingTitle {
+    font-size: 40px;
+    margin-top: 75%;
   }
+  .fauxDonut {
+    margin-top: 50%;
+  }
+  .landingBanner {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .teamHeading {
+    margin-bottom: 40px;
+  }
+  .myname {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .teamMemberContainer {
+    margin-top: 25px;
+  }
+
+  .teamHeading {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 24px;
+  }
+
+  .secondTeamMember {
+    margin-bottom: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+  .fauxDonut {
+    margin-top: 50%;
+  }
+  .landingTitle {
+    font-size: 40px;
+    margin-top: 60%;
+  }
+  .landingBanner {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
   .navbar {
     align-items: baseline;
+  }
+
+  .projButt, .projButtColor {
+    display: none;
+  }
+
+  .landingMap {
+    display: none;
+  }
+
+  .landingWhite {
+    width: 100%;
   }
 
   .desktoppic {
@@ -232,13 +389,14 @@ body {
   }
 
   .whoami {
-    font-size: 14px;
+    font-size: 11px;
   }
 
   .myname {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
+
 
 @media only screen and (max-width: 350px) {
   .whoami {
@@ -246,6 +404,7 @@ body {
   }
   .smalldisplay {
     display: block;
+    font-size: 11px;
   }
   .aboutPlotree {
     font-size: 14px;
