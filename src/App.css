@@ -21,6 +21,7 @@ body {
   background-color: rgba(255,255,255,0);
   border: none;
   height: 80px;
+  display: flex;
   align-items: center;
   transition: all 0.5s ease-in-out;
 }
@@ -30,6 +31,7 @@ body {
   color: #57068c;
   border: none;
   height: 70px;
+  display: flex;
   align-items: center;
   transition: all 0.5s ease-in-out;
   -webkit-box-shadow: 0px 6px 55px -8px rgba(0,0,0,0.15);
@@ -403,19 +405,41 @@ body {
 }
 
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 540px) {
+  .navTrans {
+    display: block;
+  }
+  .navColor {
+    display: block;
+  }
+  .navbar-brand {
+    padding: 17px 20px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
   .whoami {
     display: none;
   }
   .smalldisplay {
     display: block;
-    font-size: 11px;
+    font-size: 10px;
+  }
+  .teamAvatar {
+    height: 100px;
+  }
+  .teamMemberContainer {
+    margin-top: -20px;
   }
   .aboutPlotree {
     font-size: 14px;
   }
+  .landingTitle {
+    font-size: 30px;
+    margin-top: 90%;
+  }
   .landingBanner {
-    font-size: 40px;
+    font-size: 30px;
   }
   #logoscroll {
     height: 100px;

@@ -26,17 +26,20 @@ class NavBar extends Component {
 
   render () {
     return (
-      <Navbar fixedTop={true} style={{display: 'flex'}} className={this.state.isTop ? 'navTrans' : 'navColor'}>
+      <Navbar fixedTop={true} className={this.state.isTop ? 'navTrans' : 'navColor'}>
         <Navbar.Header style={{display: 'flex', flexDirection: 'column', alignItems: 'left'}}>
           <Navbar.Brand>
             <img style={{height: '65px', width: '134px'}} src={logo} className="App-logo" alt="logo" />
           </Navbar.Brand>
         </Navbar.Header>
+        <Navbar.Collapse>
           <Nav pullRight style={{display: 'flex', alignItems: 'center'}} className={this.state.isTop ? 'navRightEight' : 'navRightSeven'}>
             <NavItem eventKey={1} href="#">
               <p className={this.state.isTop ? 'projButt' : 'projButtColor'} onClick={(e) => this.projectButtonClick()} style={{fontWeight: '300'}}>PROJECTS</p>
             </NavItem>
           </Nav>
+        </Navbar.Collapse>
+
       </Navbar>
     )
   }
