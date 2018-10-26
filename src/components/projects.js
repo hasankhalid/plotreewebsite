@@ -50,7 +50,7 @@ class Projects extends Component {
           <Col lg={6} md={6} sm={6} xs={12} className="proj" style={{paddingRight: '0px', paddingLeft: '0px', position: 'relative'}}>
             <div style={{height: '100%'}}>
               <div style={{backgroundColor: 'rgba(76, 175, 80, 0.475)', position: 'absolute', top: '0', left: '0', zIndex: '4', height: '100%', width: '100%'}}/>
-              <img src={map} style ={{height: '88%', width: '86%', marginLeft: '7%', objectFit: 'contain'}} alt="Pakistan General Elections Map" />
+              <img src={map} style ={{height: '88%', width: '86%', marginLeft: '7%', objectFit: 'contain'}} className="PakMap" alt="Pakistan General Elections Map" />
               <div className="containProjectTitle" style={{color: 'black', paddingLeft: '75px', zIndex: '5'}}>
                 <Fade down delay={50}>
                   <div style={{display: 'flex', alignItems: 'center'}}>

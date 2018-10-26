@@ -402,6 +402,9 @@ body {
   .myname {
     font-size: 16px;
   }
+  .containProjectTitle {
+    padding: 15px 50px !important;
+  }
 }
 
 
@@ -443,5 +446,20 @@ body {
   }
   #logoscroll {
     height: 100px;
+  }
+  .containProjectTitle {
+    padding: 15px 35px !important;
+  }
+  .PakMap {
+    height: 80% !important;
+  }
+  .projTitle {
+    font-size: 16px;
+  }
+  .projDesc {
+    font-size: 12px;
+  }
+  .Butt {
+    font-size: 14px;
   }
 }
