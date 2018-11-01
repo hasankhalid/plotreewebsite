@@ -51,8 +51,8 @@ class About extends Component {
                   <Fade delay={600}>
                     <div className="teamInfoContainer">
                       <h2 className="myname">Danial Sadiq Masood</h2>
-                      <p className="smalldisplay">Full Stack Developer/Data Wrangler at Plotree. Previously I used to work as a Freelancer. CS graduate from Kings College London.</p>
-                      <p className="whoami">I am a full stack developer/software engineer at Plotree. I am a Computer Science graduate from Kings College London and have previously done freelance work. In my free time I like to design sounds and make music.</p>
+                      <p className="smalldisplay">Full Stack Developer/Data Wrangler at Plotree. Previously I used to work as a freelance software developer. CS graduate from Kings College London.</p>
+                      <p className="whoami">I am a full stack developer/software engineer at Plotree. I am a Computer Science graduate from Kings College London and have previously worked as a freelance software developer. In my free time I like to design sounds and make music.</p>
                     </div>
                   </Fade>
                 </div>

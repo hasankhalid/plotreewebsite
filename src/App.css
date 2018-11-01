@@ -463,3 +463,42 @@ body {
     font-size: 14px;
   }
 }
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .fauxDonut {
+    margin-top: 35%;
+  }
+  .landingTitle {
+    font-size: 35px;
+  }
+  .landingBanner {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 850px) and (orientation: landscape) {
+  .proj, .about, .landing {
+    height: 575px;
+  }
+  .teamHeading {
+    margin-top: 70px;
+  }
+  .teamAvatar {
+    height: 120px;
+  }
+  .myname {
+    font-size: 20px;
+  }
+  .whoami {
+    font-size: 14px;
+  }
+  .teamMemberContainer {
+    margin-top: 2px;
+  }
+}
+
+@media only screen and (max-width: 750px) and (orientation: landscape) {
+  .fauxDonut {
+    margin-top: 20%;
+  }
+}
