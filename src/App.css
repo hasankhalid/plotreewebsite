@@ -367,7 +367,7 @@ body {
 
 .companyBanner {
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: 'Roboto', sans-serif;
   color: #1976d2;
   margin-bottom: 20px;
@@ -462,9 +462,11 @@ body {
 @media only screen and (max-width: 1200px) {
   .myname {
     font-size: 24px;
+    font-weight: 500;
   }
   .mydesig {
     font-size: 18px;
+    font-weight: 500;
   }
   .project_main_picture {
     width: 400px;
