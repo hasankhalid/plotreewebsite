@@ -1,63 +1,70 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-bootstrap'
-import saad from '../resources/saad.jpeg'
-import hasan from '../resources/hasan1.jpg'
+import saad from '../resources/saad.jpg'
+import hasan from '../resources/hasan.jpg'
 import danial from '../resources/danial.jpg'
-import Fade from 'react-reveal/Fade';
+import YouTube from 'react-youtube-embed'
 
 class About extends Component {
   render () {
     return (
-      <div style={{backgroundColor: 'white'}} className="about">
-        <Fade>
-          <p className="teamHeading" style={{textAlign: 'center'}}>Meet the team</p>
-        </Fade>
+      <div className="about">
         <Grid>
           <Row className="show-grid">
-            <div>
-              <Col lg={6} md={6} sm={12} xs={12}>
-                <div className="teamMemberContainer">
-                  <Fade delay={300}>
-                    <img src={saad} className="teamAvatar" alt="logo" />
-                  </Fade>
-                  <Fade delay={300}>
-                    <div className="teamInfoContainer">
-                      <h2 className="myname">Saad Khalid</h2>
-                      <p className="smalldisplay">Data Visulization Engineer/Masters in Economic and Political Development Columbia SIPA/Previously lead analyst at punjab wide health survey.</p>
-                      <p className="whoami">Hi, I am a data visualization engineer at Plotree.I studied Economic and Political Development at Columbia SIPA and have recently worked as a lead analyst for a Punjab wide Health survey. In my own time, I can be found reading fiction and exploring electronic music.</p>
-                    </div>
-                  </Fade>
+            <Col lg={12} md={12} sm={12} xs={12}>
+              <h1 className="companyBanner">Meet the team</h1>
+            </Col>
+            <Col lg={6} md={6} sm={12} xs={12} className="team_first_row">
+              <div className="teamMemberContainer">
+                <img src={saad} className="teamAvatar" alt="Saad Khalid" />
+                <div className="teamInfoContainer">
+                  <h2 className="myname">Saad Khalid</h2>
+                  <h3 className="mydesig">Co-Founder, Data-Vis Lead</h3>
+                  <p className="whoami">I studied Economic and Political Development at Columbia SIPA as a Fulbright Scholar. I have in the past worked with Punjab Government as a data analysis consultant on various projects. In my own time, I enjoy reading fiction and exploring electronic music.</p>
                 </div>
-              </Col>
-              <Col lg={6} md={6} sm={12} xs={12}>
-                <div className="teamMemberContainer thirdTeamMember">
-                  <Fade delay={450}>
-                    <img src={hasan} className="teamAvatar" alt="logo" />
-                  </Fade>
-                  <Fade delay={450}>
-                    <div className="teamInfoContainer">
-                      <h2 className="myname">Hasan Khalid</h2>
-                      <p className="smalldisplay">Front End Developer/CS graduate from IBA Karachi/Previously freelance developer and IT Support Engineer</p>
-                      <p className="whoami">I am a front-end developer and UX designer at Plotree. I’ve previously worked as a freelance web developer and IT Support Engineer for GAT Consulting. You can also find me watching football or learning the piano.</p>
-                    </div>
-                  </Fade>
+              </div>
+            </Col>
+            <Col lg={6} md={6} sm={12} xs={12} className="team_first_row">
+              <div className="teamMemberContainer">
+                <img src={hasan} className="teamAvatar" alt="logo" />
+                <div className="teamInfoContainer">
+                  <h2 className="myname">Hasan Khalid</h2>
+                  <h3 className="mydesig">Co-Founder, Design/UX Lead</h3>
+                  <p className="whoami">I design front-end, interaction and user experience of our projects. I've previously worked as a freelance web developer and an IT and Management Consultant. You can also find me watching football or learning the piano.</p>
                 </div>
-              </Col>
-              <Col lg={6} md={6} sm={12} xs={12}>
-                <div className="teamMemberContainer secondTeamMember">
-                  <Fade delay={600}>
-                    <img src={danial} className="teamAvatar" alt="Danial" />
-                  </Fade>
-                  <Fade delay={600}>
-                    <div className="teamInfoContainer">
-                      <h2 className="myname">Danial Sadiq Masood</h2>
-                      <p className="smalldisplay">Full Stack Developer/Data Wrangler at Plotree. Previously I used to work as a freelance software developer. CS graduate from Kings College London.</p>
-                      <p className="whoami">I am a full stack developer/software engineer at Plotree. I am a Computer Science graduate from Kings College London and have previously worked as a freelance software developer. In my free time I like to design sounds and make music.</p>
-                    </div>
-                  </Fade>
+              </div>
+            </Col>
+            </Row>
+          </Grid>
+          <Grid>
+          <Row>
+            <Col lg={6} md={6} sm={12} xs={12} className="team_second_row">
+              <div className="teamMemberContainer">
+                <img src={danial} className="teamAvatar" alt="Danial" />
+                <div className="teamInfoContainer">
+                  <h2 className="myname">Danial Sadiq Masood</h2>
+                  <h3 className="mydesig">Full Stack Lead, Data Wrangler</h3>
+                  <p className="whoami">I am a full stack developer/software engineer at Plotree. I am a Computer Science graduate from Kings College London and have previously worked as a freelance software developer. In my free time I like to design sounds and make music.</p>
                 </div>
-              </Col>
-            </div>
+              </div>
+            </Col>
+          </Row>
+        </Grid>
+        <Grid className="fulbright_talk">
+          <Row className="show-grid">
+            <Col lg={12} md={12} sm={12} xs={12}>
+              <h1 className="companyBanner">We spoke at the Fulbright conference</h1>
+            </Col>
+             <Col lg={12} md={12} xs={12}>
+               <div className="youtubeParent">
+                <div className="youtubeContain">
+                  <YouTube id='XO3D1yGi-a4' />
+                </div>
+                <div className="responsive_youtube">
+                  <p className="twenty frank_ruhl">Our eyes are a marvel. Seeing with purpose often leads to meaning and insight. In an age of information overload, we need to see more to understand the crazy world we live in. We got an opportunity to speak at the Fulbright Alumni conference 2018 to make a case for impactful data visualization in Pakistan</p>
+                </div>
+              </div>
+             </Col>
           </Row>
         </Grid>
       </div>

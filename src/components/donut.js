@@ -26,7 +26,7 @@ class Donut extends Component {
        data1 = [ 50, 42.5, 27.5, 80 ];
 
    var color = d3.scale.ordinal()
-       .range(["#57068c", "#FDD835", "#03A9F4","#BDBDBD"]);
+       .range(["#57068c", "#FDD835", "#fff","#BDBDBD"]);
 
    var arc = d3.svg.arc();
 

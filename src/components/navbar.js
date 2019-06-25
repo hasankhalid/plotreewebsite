@@ -1,41 +1,28 @@
 import React, { Component } from 'react'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
-import logo from '../resources/logo.svg'
+import logo from '../resources/logo-invert-1.svg'
 
 class NavBar extends Component {
   projectButtonClick = () => {
       window.scroll({
-        top: window.innerHeight - 70,
+        top: window.innerHeight,
         left: 0,
         behavior: 'smooth'
       });
   }
 
-  state = {
-    isTop: true,
-  };
-
-  componentDidMount() {
-    document.addEventListener('scroll', () => {
-      const isTop = window.scrollY < 20;
-      if (isTop !== this.state.isTop) {
-          this.setState({ isTop })
-      }
-    });
-  }
-
   render () {
     return (
-      <Navbar fixedTop={true} className={this.state.isTop ? 'navTrans' : 'navColor'}>
+      <Navbar className='navTrans'>
         <Navbar.Header style={{display: 'flex', flexDirection: 'column', alignItems: 'left'}}>
           <Navbar.Brand>
-            <img style={{height: '65px', width: '134px'}} src={logo} className="App-logo" alt="logo" />
+            <img style={{height: '71px', width: '150px'}} src={logo} className="App-logo" alt="logo" />
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav pullRight style={{display: 'flex', alignItems: 'center'}} className={this.state.isTop ? 'navRightEight' : 'navRightSeven'}>
+          <Nav pullRight style={{display: 'flex', alignItems: 'center'}} className='navRightEight'>
             <NavItem eventKey={1} href="#">
-              <p className={this.state.isTop ? 'projButt' : 'projButtColor'} onClick={(e) => this.projectButtonClick()} style={{fontWeight: '300'}}>PROJECTS</p>
+              <p className='projButt' onClick={(e) => this.projectButtonClick()}>PROJECTS</p>
             </NavItem>
           </Nav>
         </Navbar.Collapse>

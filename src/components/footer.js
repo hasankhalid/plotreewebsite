@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import TiSocialTwitterCircular from 'react-icons/lib/ti/social-twitter-circular';
-import TiSocialLinkedinCircular from 'react-icons/lib/ti/social-linkedin-circular';
-import TiSocialFacebookCircular from 'react-icons/lib/ti/social-facebook-circular';
-import TiSocialGithubCircular from 'react-icons/lib/ti/social-github-circular';
+import TiSocialTwitter from 'react-icons/lib/ti/social-twitter';
+import TiSocialLinkedin from 'react-icons/lib/ti/social-linkedin';
+import TiSocialFacebook from 'react-icons/lib/ti/social-facebook';
+import TiSocialGithub from 'react-icons/lib/ti/social-github';
 
 class Footer extends Component {
   twitter = () => {
@@ -25,34 +25,25 @@ class Footer extends Component {
   render () {
     return (
       <footer className="footer">
-        <Grid style={{height: '100%'}}>
-          <Row className="show-grid" style={{height: '100%'}}>
-            <Col lg={6} md={6} sm={12} xs={12} style={{display: 'flex', flexDirection: 'column'}}>
-              <p className="nunito" style={{fontWeight: '300', fontSize: '32px', marginTop: '50px', marginBottom: '30px'}}>Plotree Info Design</p>
-              <p style={{fontWeight: '300', fontSize: '18px'}}>+92 323 4715678</p>
-              <p style={{fontWeight: '300', fontSize: '18px'}}>hasankhalid@plotree.studio | saadkhalid@plotree.studio</p>
-              <p style={{fontWeight: '300', fontSize: '18px'}}>3 Shahrah-e-Aiwan-e-Tijarat China Chowk Lahore</p>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12} style={{display: 'flex', flexDirection: 'column'}}>
-              <p className="nunito" style={{fontWeight: '300', fontSize: '32px', marginTop: '50px'}}>Connect With Us</p>
+        <Grid>
+          <Row className="show-grid">
+            <Col lg={12} md={12} sm={12} xs={12}>
+              <p className="foot_heading">Interested in learning more?</p>
+              <p style={{fontSize: '16px'}}>Reach out to us for more information on pricing, services and projects at <span style={{borderBottom: '1px solid', fontWeight: '600'}}>saadkhalid@plotree.studio</span> & <span style={{borderBottom: '1px solid', fontWeight: '600'}}>hasankhalid@plotree.studio</span></p>
+              <p className="foot_section_heading">Connect with us on social media</p>
               <div>
-                <TiSocialLinkedinCircular onClick={() => this.linkedIn()} style={{cursor: 'pointer'}} size={40}/>
-                <TiSocialTwitterCircular onClick={() => this.twitter()} style={{cursor: 'pointer'}} size={40}/>
-                <TiSocialFacebookCircular onClick={() => this.facebook()} style={{cursor: 'pointer'}} size={40}/>
-                <TiSocialGithubCircular onClick={() => this.github()} style={{cursor: 'pointer'}} size={40}/>
+                <TiSocialLinkedin onClick={() => this.linkedIn()} style={{marginLeft: '-3px'}} className="footer_social" size={26}/>
+                <TiSocialTwitter onClick={() => this.twitter()} className="footer_social" size={26}/>
+                <TiSocialFacebook onClick={() => this.facebook()} className="footer_social" size={26}/>
+                <TiSocialGithub onClick={() => this.github()} className="footer_social" size={26}/>
               </div>
+              <p className="foot_section_heading">Contact Us</p>
+              <p style={{fontSize: '16px'}}>+92 323 4715678</p>
+              <p style={{fontSize: '16px'}}>3 Shahrah-e-Aiwan-e-Tijarat China Chowk Lahore</p>
+              <p className="copyright_message">Copyright © 2019 Plotree Info Design</p>
             </Col>
           </Row>
         </Grid>
-        <div style={{width: '100%', backgroundColor: '#57068c', color: 'white', padding: '20px', marginTop: '75px'}}>
-          <Grid style={{height: '100%'}}>
-            <Row className="show-grid" style={{height: '100%'}}>
-              <Col lg={12} md={12} sm={12} xs={12}>
-                <p style={{fontWeight: '300', fontSize: '16px', textAlign: 'right', margin: '0px'}}>Copyright © 2018 Plotree Info Design</p>
-              </Col>
-            </Row>
-          </Grid>
-        </div>
       </footer>
     )
   }

@@ -4,6 +4,8 @@ import Landing from './components/landing'
 import About from './components/plotree'
 import Footer from './components/footer'
 import Projects from './components/projects'
+import SimpleSwiper from './components/swiper'
+import Company from './components/company'
 
 class App extends Component {
   componentWillMount() {
@@ -15,6 +17,8 @@ class App extends Component {
     return (
       <div className="App">
         <Landing/>
+        <SimpleSwiper/>
+        <Company/>
         <Projects/>
         <About/>
         <Footer/>

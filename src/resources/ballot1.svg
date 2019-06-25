@@ -1,75 +1,50 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="Capa_1"
-   x="0px"
-   y="0px"
-   viewBox="0 0 60 60"
-   style="enable-background:new 0 0 60 60;"
-   xml:space="preserve"
-   sodipodi:docname="ballot1.svg"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"><metadata
-     id="metadata45"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-     id="defs43" /><sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1440"
-     inkscape:window-height="799"
-     id="namedview41"
-     showgrid="false"
-     inkscape:zoom="15.733333"
-     inkscape:cx="16.755315"
-     inkscape:cy="47.239882"
-     inkscape:window-x="0"
-     inkscape:window-y="1"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g8" /><g
-     id="g8"><path
-       d="M29,25.882l26.482-13.241L29.434,0.099c-0.284-0.137-0.615-0.132-0.895,0.014l-25,13c-0.011,0.006-0.018,0.015-0.029,0.021   c-0.001,0.001-0.002,0.001-0.003,0.002L29,25.882z"
-       id="path2"
-       style="fill:#ffffff;fill-opacity:0" /><path
-       d="M30,27.618V60c0.138,0,0.272-0.038,0.401-0.094c0.015-0.007,0.032-0.004,0.046-0.011l26-13C56.786,46.725,57,46.379,57,46   V14.119L30,27.618z"
-       id="path4"
-       style="fill:#ffff00;fill-opacity:1" /><path
-       d="M28,27.618l-25-12.5V46c0,0.379,0.214,0.725,0.553,0.895L28,59.119V27.618z"
-       id="path6"
-       style="fill:#1976d2;fill-opacity:1" /><rect
-       style="fill:#ffffff;fill-opacity:1;stroke-width:1.12231648"
-       id="rect852"
-       width="1.8285444"
-       height="13.090343"
-       x="-6.8014932"
-       y="-34.633106"
-       transform="matrix(-0.92551504,0.37871085,-0.84422427,-0.53599009,0,0)" /></g><g
-     id="g10" /><g
-     id="g12" /><g
-     id="g14" /><g
-     id="g16" /><g
-     id="g18" /><g
-     id="g20" /><g
-     id="g22" /><g
-     id="g24" /><g
-     id="g26" /><g
-     id="g28" /><g
-     id="g30" /><g
-     id="g32" /><g
-     id="g34" /><g
-     id="g36" /><g
-     id="g38" /></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Capa_1" inkscape:version="0.92.2 5c3e80d, 2017-08-06" sodipodi:docname="ballot1.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
+	 style="enable-background:new 0 0 60 60;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;fill-opacity:0;}
+	.st1{fill:#546E7A;}
+	.st2{fill:#2196F3;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview41" inkscape:current-layer="g8" inkscape:cx="16.755315" inkscape:cy="47.239882" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="799" inkscape:window-maximized="1" inkscape:window-width="1440" inkscape:window-x="0" inkscape:window-y="1" inkscape:zoom="15.733333" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<g id="g8">
+	<path id="path2" class="st0" d="M29,25.9l26.5-13.2l-26-12.5c-0.3-0.1-0.6-0.1-0.9,0l-25,13c0,0,0,0,0,0c0,0,0,0,0,0L29,25.9z"/>
+	<path id="path4" class="st1" d="M30,27.6V60c0.1,0,0.3,0,0.4-0.1c0,0,0,0,0,0l26-13c0.3-0.2,0.6-0.5,0.6-0.9V14.1L30,27.6z"/>
+	<path id="path6" class="st2" d="M28,27.6L3,15.1V46c0,0.4,0.2,0.7,0.6,0.9L28,59.1V27.6z"/>
+	<polygon id="rect852" class="st1" points="35.5,16 33.8,16.7 22.8,9.7 24.5,9 	"/>
+</g>
+<g id="g10">
+</g>
+<g id="g12">
+</g>
+<g id="g14">
+</g>
+<g id="g16">
+</g>
+<g id="g18">
+</g>
+<g id="g20">
+</g>
+<g id="g22">
+</g>
+<g id="g24">
+</g>
+<g id="g26">
+</g>
+<g id="g28">
+</g>
+<g id="g30">
+</g>
+<g id="g32">
+</g>
+<g id="g34">
+</g>
+<g id="g36">
+</g>
+<g id="g38">
+</g>
+</svg>

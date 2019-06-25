@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #root {
@@ -22,29 +22,11 @@ body {
   border: none;
   height: 80px;
   display: flex;
-  align-items: center;
   transition: all 0.5s ease-in-out;
-}
-
-.navColor {
-  background-color: white;
-  color: #57068c;
-  border: none;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
-  -webkit-box-shadow: 0px 6px 55px -8px rgba(0,0,0,0.15);
-  -moz-box-shadow: 0px 6px 55px -8px rgba(0,0,0,0.15);
-  box-shadow: 0px 6px 55px -8px rgba(0,0,0,0.15);
 }
 
 .navRightEight {
   height: 80px;
-}
-
-.navRightSeven {
-  height: 70px;
 }
 
 .landing {
@@ -52,7 +34,9 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  color: #57068c;
+  background-image: linear-gradient(to right bottom, #64b5f6, #51a5ee, #3e96e5, #2c86dc, #1976d2);
+  color: white;
+  z-index: 4;
 }
 
 .landingAbsolute {
@@ -71,26 +55,12 @@ body {
   height: 100%;
 }
 
-.wasaMap {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  z-index: 4;
+.landingSocial {
+  transition: 0.25s ease-in;
 }
 
-.landingGradient {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #7F00FF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1565C0, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1565C0, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  opacity: 0.2;
-  z-index: 5;
+.landingSocial:hover {
+  color: rgb(255, 235, 59);
 }
 
 .socialContain {
@@ -109,8 +79,31 @@ body {
 }
 
 .landingColContain {
-  display: flex;
   height: 100%;
+}
+
+.bannerVis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner_vis_contain {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.wasa {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .landingColumn {
@@ -121,6 +114,66 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.project_slider_box {
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.35s ease-in-out;
+}
+
+.project_slider_box:hover {
+  border-color: #bdbdbd;
+}
+
+.project_slider_title {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #616161;
+}
+
+.project_slider_image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project_main_banner {
+  display: flex;
+  justify-content: center;
+}
+
+.project_main_picture {
+  box-shadow: 0 0 12px 3px rgba(0,0,0,0.16);
+  border-radius: 10px;
+  width: 415px;
+}
+
+.project_details {
+  padding: 0px 25px;
+}
+
+.thumbnail_gradient_two {
+  padding-top: 75px;
+}
+
+.thumnail_gradient {
+  background-image: linear-gradient(to right top, #f5f5f5, #f3f3f3, #f1f2f1, #f0f0f0, #eeeeee);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #616161;
+}
+
+
 
 .projButt {
   border: none;
@@ -165,34 +218,20 @@ body {
 
 .Butt {
   border: none;
-  background-color: rgba(255, 0, 0, 0);
   font-size: 16px;
-  font-weight: 300;
   padding: 0px;
   cursor: pointer;
-  font-weight: 500;
-  border-bottom: 1px solid;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
+  border-bottom: 1px solid;
   /* ...and now for the proper property */
   transition:.5s;
   align-self: flex-start;
-}
-
-.teamHeading {
-  margin-bottom: 60px;
-}
-
-.teamMemberContainer {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.secondTeamMember {
-  margin-top: 80px;
+  font-weight: 600;
+  color: #2196f3;
+  margin-top: 10px;
 }
 
 .teamAvatar {
@@ -202,39 +241,15 @@ body {
   align-self: center;
 }
 
-.teamInfoContainer {
-  height: 160px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-}
-
 .mobilepic {
   display: none;
 }
 
 .footer {
   background: #57068c;
+  background-image: linear-gradient(to right top, #1976d2, #156ac6, #125eba, #0f53ad, #0d47a1);
+  padding: 50px 0px;
   color: white;
-}
-
-.nunito {
-  font-family: 'Nunito', sans-serif;
-}
-
-.proj {
-  height: calc(100vh - 70px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding-left: 30px;
-}
-
-.projDetail {
-  margin-top: 50px;
-  padding-right: 15px;
 }
 
 .projButton {
@@ -243,11 +258,11 @@ body {
 }
 
 .about {
-  height: calc(100vh - 70px);
+  padding: 50px 0px 70px 0px;
+}
+
+.teamMemberContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .imageContain {
@@ -266,16 +281,20 @@ body {
 }
 
 .projTitle {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 45px;
 }
 
 .projDesc {
   font-size: 14px;
+  margin: 10px 0px;
 }
 
 .whoami {
   font-size: 16px;
+  color: #616161;
 }
 
 .smalldisplay {
@@ -288,24 +307,173 @@ body {
 }
 
 .landingBanner, .landingTitle {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .landingTitle {
-  margin-top: 45%;
-  font-size: 45px;
+  font-size: 50px;
 }
 
-.teamHeading {
-  font-size: 35px;
+.landingBanner {
+  margin-top: 10px;
+  color: #ffeb3b;
 }
 
-@media only screen and (max-width: 991px) and (min-width: 769px) {
+.foot_heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  color: #ffeb3b;
+}
+
+.foot_section_heading {
+  color: #ffeb3b;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.footer_social {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.footer_social:hover {
+  color: #ffeb3b;
+}
+
+.copyright_message {
+  color: #ffeb3b;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.value_prop {
+  margin-bottom: 50px;
+}
+
+.landingDesc {
+  margin-top: 40px;
+}
+
+.eighteen {
+  font-size: 16px;
+}
+
+.twenty {
+  font-size: 18px;
+}
+
+.companyBanner {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: #1976d2;
+  margin-bottom: 20px;
+}
+
+.getintouch {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: #757575;
+  margin-top: 40px;
+}
+
+.proj_section_heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #1976d2;
+  margin-bottom: 40px;
+}
+
+.moreprojects {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #757575;
+  font-size: 14px;
+  margin-top: 35px;
+}
+
+.myname, .mydesig {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.myname {
+  font-size: 26px;
+}
+
+.mydesig {
+  font-size: 18px;
+  color: #1976d2;
+}
+
+.team_first_row {
+  margin-top: 30px;
+}
+
+.team_second_row {
+  margin-top: 30px;
+}
+
+.youtubeParent {
+  padding-top: 30px;
+  display: flex;
+}
+
+.youtubeContain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 12px 3px rgba(0,0,0,0.16);
+}
+
+.responsive_youtube {
+  width: 30%;
+  padding-left: 25px;
+  display: flex;
+  color: #616161;
+  align-items: center;
+}
+
+.fulbright_talk {
+  margin-top: 50px;
+}
+
+.frank_ruhl {
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.twenty_t {
+  font-size: 20px;
+  color: black;
+}
+
+.grey {
+  color: #616161;
+}
+
+@media only screen and (max-width: 1200px) {
+  .myname {
+    font-size: 24px;
+  }
+  .mydesig {
+    font-size: 18px;
+  }
+  .project_main_picture {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
   .landingTitle {
     font-size: 40px;
-    margin-top: 75%;
   }
   .fauxDonut {
     margin-top: 50%;
@@ -313,30 +481,28 @@ body {
   .landingBanner {
     font-size: 35px;
   }
-}
-
-@media only screen and (max-width: 1200px) {
-  .teamHeading {
-    margin-bottom: 40px;
-  }
-  .myname {
-    font-size: 24px;
+  .project_main_picture {
+    width: 300px;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .teamMemberContainer {
-    margin-top: 25px;
+  .project_details {
+    padding: 0px 5px;
+  }
+  .youtubeParent {
+    flex-direction: column-reverse;
+    padding-top: 10px;
   }
 
-  .teamHeading {
-    margin-top: 30px;
-    margin-bottom: 0px;
-    font-size: 24px;
+  .responsive_youtube {
+    padding-left: 0px;
+    width: 100%;
+    padding-bottom: 30px;
   }
 
-  .secondTeamMember {
-    margin-bottom: 30px;
+  .youtubeContain {
+    width: 100%;
   }
 }
 
@@ -347,14 +513,13 @@ body {
   }
   .landingTitle {
     font-size: 40px;
-    margin-top: 60%;
   }
   .landingBanner {
     font-size: 35px;
   }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
   .navbar {
     align-items: baseline;
   }
@@ -363,7 +528,7 @@ body {
     display: none;
   }
 
-  .landingMap {
+  .bannerVis {
     display: none;
   }
 
@@ -387,23 +552,40 @@ body {
     padding: 20px;
   }
 
-  .about {
-    justify-content: space-around;
-  }
-
   .teamAvatar {
     height: 130px;
   }
 
   .whoami {
-    font-size: 11px;
+    font-size: 14px;
+
   }
 
   .myname {
-    font-size: 16px;
+    font-size: 20px;
   }
+
+  .mydesig {
+      font-size: 16px;
+  }
+
   .containProjectTitle {
     padding: 15px 50px !important;
+  }
+  .evenProj {
+    padding-top: 75px;
+  }
+
+  .twenty {
+    font-size: 16px;
+  }
+
+  .twenty_t {
+    font-size: 18px;
+  }
+
+  .companyBanner {
+    font-size: 32px;
   }
 }
 
@@ -412,34 +594,27 @@ body {
   .navTrans {
     display: block;
   }
-  .navColor {
-    display: block;
-  }
   .navbar-brand {
     padding: 17px 20px;
   }
+  .project_main_picture {
+    width: 325px;
+  }
+
 }
 
 @media only screen and (max-width: 380px) {
   .whoami {
-    display: none;
-  }
-  .smalldisplay {
-    display: block;
-    font-size: 10px;
+    font-size: 12px;
   }
   .teamAvatar {
     height: 100px;
-  }
-  .teamMemberContainer {
-    margin-top: -20px;
   }
   .aboutPlotree {
     font-size: 14px;
   }
   .landingTitle {
     font-size: 30px;
-    margin-top: 90%;
   }
   .landingBanner {
     font-size: 30px;
@@ -477,11 +652,8 @@ body {
 }
 
 @media only screen and (max-width: 850px) and (orientation: landscape) {
-  .proj, .about, .landing {
+  .landing {
     height: 575px;
-  }
-  .teamHeading {
-    margin-top: 70px;
   }
   .teamAvatar {
     height: 120px;
@@ -489,11 +661,11 @@ body {
   .myname {
     font-size: 20px;
   }
+  .mydesig {
+    font-size: 18px;
+  }
   .whoami {
     font-size: 14px;
-  }
-  .teamMemberContainer {
-    margin-top: 2px;
   }
 }
 
