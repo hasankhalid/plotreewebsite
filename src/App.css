@@ -153,6 +153,7 @@ body {
   box-shadow: 0 0 12px 3px rgba(0,0,0,0.16);
   border-radius: 10px;
   width: 415px;
+  height: 415px;
 }
 
 .project_details {
@@ -366,8 +367,8 @@ body {
 }
 
 .companyBanner {
-  font-size: 34px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 400;
   font-family: 'Roboto', sans-serif;
   color: #1976d2;
   margin-bottom: 20px;
@@ -470,6 +471,7 @@ body {
   }
   .project_main_picture {
     width: 400px;
+    height: 400px;
   }
 }
 
@@ -485,6 +487,7 @@ body {
   }
   .project_main_picture {
     width: 300px;
+    height: 300px;
   }
 }
 
@@ -601,6 +604,7 @@ body {
   }
   .project_main_picture {
     width: 325px;
+    height: 325px;
   }
 
 }

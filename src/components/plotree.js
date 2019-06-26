@@ -61,7 +61,7 @@ class About extends Component {
                   <YouTube id='XO3D1yGi-a4' />
                 </div>
                 <div className="responsive_youtube">
-                  <p className="twenty frank_ruhl">Our eyes are a marvel. Seeing with purpose often leads to meaning and insight. In an age of information overload, we need to see more to understand the crazy world we live in. We got an opportunity to speak at the Fulbright Alumni conference 2018 to make a case for impactful data visualization in Pakistan</p>
+                  <p className="twenty frank_ruhl">"Seeing" with purpose often leads to meaning and insight. In an age of information overload, we need to purposefully see more to understand the crazy world we live in. We got an opportunity to speak about this at the Fulbright Alumni conference 2018 where we made a case for impactful data visualization in Pakistan.</p>
                 </div>
               </div>
              </Col>

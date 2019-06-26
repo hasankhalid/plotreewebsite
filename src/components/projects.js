@@ -36,7 +36,7 @@ class Projects extends Component {
               <Col lg={6} md={6} sm={6} xs={12} className="proj">
                 <div className="project_contain">
                   <div className="project_main_banner">
-                    <img src={women} style ={{objectFit: 'contain'}} className="PakMap project_main_picture" alt="Pakistan General Elections Map" />
+                    <img src={women} className="PakMap project_main_picture" alt="Pakistan General Elections Map" />
                   </div>
                   <div className="project_details">
                     <div style={{display: 'flex', alignItems: 'center', marginBottom: '10px'}}>
@@ -50,7 +50,7 @@ class Projects extends Component {
               <Col lg={6} md={6} sm={6} xs={12} className="proj evenProj">
                 <div className="project_contain">
                   <div className="project_main_banner">
-                    <img src={map} style ={{objectFit: 'contain'}} className="PakMap project_main_picture" alt="Pakistan General Elections Map" />
+                    <img src={map} className="PakMap project_main_picture" alt="Pakistan General Elections Map" />
                   </div>
                   <div className="project_details">
                     <div style={{display: 'flex', alignItems: 'center', marginBottom: '10px'}}>
@@ -70,7 +70,7 @@ class Projects extends Component {
               <Col lg={6} md={6} sm={6} xs={12} className="proj">
                 <div className="project_contain">
                   <div className="project_main_banner">
-                    <img src={ideas} style ={{objectFit: 'contain'}} className="PakMap project_main_picture" alt="Pakistan General Elections Map" />
+                    <img src={ideas} className="PakMap project_main_picture" alt="Pakistan General Elections Map" />
                   </div>
                   <div className="project_details">
                     <div style={{display: 'flex', alignItems: 'center', marginBottom: '10px'}}>
@@ -84,7 +84,7 @@ class Projects extends Component {
               <Col lg={6} md={6} sm={6} xs={12} className="proj evenProj">
                 <div className="project_contain">
                   <div className="project_main_banner">
-                    <img src={psl} style ={{objectFit: 'contain'}} className="PakMap project_main_picture" alt="Pakistan General Elections Map" />
+                    <img src={psl} className="PakMap project_main_picture" alt="Pakistan General Elections Map" />
                   </div>
                   <div className="project_details">
                     <div style={{display: 'flex', alignItems: 'center', marginBottom: '10px'}}>
