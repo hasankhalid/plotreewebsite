@@ -6,6 +6,13 @@ import Footer from './components/footer'
 import Projects from './components/projects'
 import SimpleSwiper from './components/swiper'
 import Company from './components/company'
+import Esw from './components/esw'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 class App extends Component {
   componentWillMount() {
@@ -15,14 +22,23 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <Landing/>
-        <SimpleSwiper/>
-        <Company/>
-        <Projects/>
-        <About/>
-        <Footer/>
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <div className="App">
+              <Landing/>
+              <SimpleSwiper/>
+              <Company/>
+              <Projects/>
+              <About/>
+              <Footer/>
+            </div>
+          </Route>
+          <Route exact path="/esw">
+            <Esw/>
+          </Route>
+        </Switch>
+      </Router>
     );
   }
 }

@@ -443,6 +443,10 @@ body {
   align-items: center;
 }
 
+.esw_iframe {
+  border: 0px !important;
+}
+
 .fulbright_talk {
   margin-top: 50px;
 }

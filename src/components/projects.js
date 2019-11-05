@@ -20,7 +20,7 @@ class Projects extends Component {
   }
 
   ideas = () => {
-    window.open("https://hasankhalid.github.io/ideasdash/");
+    window.open("http://ideaspak.org/interactive-budget-tool/");
   }
 
 
@@ -43,7 +43,7 @@ class Projects extends Component {
                       <p className="projTitle">Gathering Data to Advance Women's Social and Economic Wellbeing</p>
                     </div>
                     <p className="projDesc">A series of visualizations presenting the findings of ESW Survey 2018 conducted by Punjab Commission on the Status of Women. The users can view sections on women's issues like labor force and employment and violence against women through interactive visuals.</p>
-                    <span onClick={() => this.esw()} className="Butt">View Project</span>
+                    <span className="Butt">View Project</span>
                   </div>
                 </div>
               </Col>

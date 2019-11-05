@@ -33,7 +33,7 @@ const SimpleSwiper = () => {
   }
 
   const ideas = () => {
-    window.open("https://hasankhalid.github.io/ideasdash/");
+    window.open("http://ideaspak.org/interactive-budget-tool/");
   }
 
   const eswlink = () => {
